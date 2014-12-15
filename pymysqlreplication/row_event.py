@@ -29,7 +29,7 @@ class RowsEvent(BinLogEvent):
         self.__only_schemas = kwargs["only_schemas"]
 
         #Header
-        self.table_id = self._read_table_id()
+        self.table_id = table_id # self._read_table_id()
 
         # Additional information
         try:
